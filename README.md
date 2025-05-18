@@ -64,6 +64,9 @@ client = pymongo.MongoClient("your_mongodb_connection_string")
 ```bash
 python app.py
 ```
+📸 Screenshots
+![image](https://github.com/user-attachments/assets/c959bb9b-2c24-4987-a5ec-2481ec557eb7)
+
 
 ⚠️ Legal Disclaimer
 This project is intended for educational purposes only. Web scraping Amazon or any third-party website may violate their terms of service. Please use responsibly.
