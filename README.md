@@ -44,6 +44,7 @@
 git clone https://github.com/your-username/amazon-scraper.git
 cd amazon-scraper
 2. Create and activate a virtual environment (optional but recommended)
+```
 bash
 Copy
 Edit
