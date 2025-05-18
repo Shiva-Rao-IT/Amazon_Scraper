@@ -64,7 +64,6 @@ client = pymongo.MongoClient("your_mongodb_connection_string")
 ```bash
 python app.py
 ```
-Access it at: http://localhost:5000
 
 ⚠️ Legal Disclaimer
 This project is intended for educational purposes only. Web scraping Amazon or any third-party website may violate their terms of service. Please use responsibly.
