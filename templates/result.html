@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+        h2 {
+            color: #343a40;
+            font-weight: bold;
+        }
+    
+        .card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+    
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+    
+        .card-img-top {
+            height: 200px;
+            object-fit: contain;
+            background-color: #fff;
+            padding: 10px;
+        }
+    
+        .card-body {
+            background-color: #fff;
+            padding: 1.25rem;
+        }
+    
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 0.5rem;
+        }
+    
+        .card-text {
+            font-size: 0.95rem;
+            color: #495057;
+        }
+    
+        .card-text strong {
+            color: #000;
+        }
+    
+        @media (max-width: 767px) {
+            .card {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Search Results</h2>
+        <div class="row">
+            {% for review in reviews %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="{{ review.image_url }}" class="card-img-top" alt="Product Image" style="height: 200px; object-fit: contain;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ review.title }}</h5>
+                        <p class="card-text"><strong>Price:</strong> {{ review.price }}</p>
+                        <p class="card-text"><strong>Rating:</strong> {{ review.rating }}</p>
+                        <p class="card-text"><strong>Reviews:</strong> {{ review.reviews }}</p>
+                        <p class="card-text"><strong>Availability:</strong> {{ review.availability }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+ </body>
+ </html> 
