@@ -70,7 +70,7 @@ This project is intended for educational purposes only. Web scraping Amazon or a
 
 🧑‍💻 Author
 Shiva Yadav
-MCA Student – GGSIPU
+BSC Student – University of Delhi
 
 📄 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
