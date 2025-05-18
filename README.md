@@ -43,31 +43,27 @@
 ```bash
 git clone https://github.com/your-username/amazon-scraper.git
 cd amazon-scraper
-2. Create and activate a virtual environment (optional but recommended)
 ```
-bash
-Copy
-Edit
+2. Create and activate a virtual environment (optional but recommended)
+```bash
 python -m venv venv
 source venv/bin/activate  # For Linux/macOS
 venv\Scripts\activate     # For Windows
+```
 3. Install dependencies
-bash
-Copy
-Edit
+```bash
 pip install -r requirements.txt
+```
 4. Add your MongoDB connection string
 Edit the Flask app file (e.g., app.py) and replace the placeholder with your actual MongoDB connection URI:
 
-python
-Copy
-Edit
+```python
 client = pymongo.MongoClient("your_mongodb_connection_string")
+```
 5. Run the application
-bash
-Copy
-Edit
+```bash
 python app.py
+```
 Access it at: http://localhost:5000
 
 ⚠️ Legal Disclaimer
